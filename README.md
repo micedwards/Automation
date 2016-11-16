@@ -1,5 +1,5 @@
 # Network Programmability & Automation 
-2016.11.14 - Light the New World
+2016.11.16 - Light the New World
 
 Basically a URL dump. Most comments are cribbed from the source site or 
   https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
@@ -38,7 +38,7 @@ https://communities.cisco.com/docs/DOC-66387 links out to training sites some of
 * JINJA2 
 * JSON 
 * REST API 
-* ToDD [& influxdb] 
+* ToDD [and influxdb] 
 
 ## LANGUAGES:
 
@@ -80,30 +80,11 @@ I used this to dismantle ACE20 loadbalancer configurations into individual farms
 * https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
   
 Good podcasts on these topics on Packet Pushers: 
-
-* Show 176: Intro To Python & Automation For Network Engineers 
-
-  http://packetpushers.net/podcast/podcasts/show-176-intro-to-python-automation-for-network-engineers
-
-* Show 198: Kirk Byers On Network Automation With Python & Ansible  
-
-  http://packetpushers.net/podcast/podcasts/show-198-kirk-byers-network-automation-python-ansible
-
-* Show 270: Design & Build 9: Automation With Python And Netmiko 
-
-  http://packetpushers.net/podcast/podcasts/show-270-design-build-9-automation-python-netmiko
-
-* Datanauts 034: Automate All The Packets
-
-  http://packetpushers.net/podcast/podcasts/datanauts-034-automate-packets
-
-* PQ Show 81: Network Testing With ToDD
-
-  http://packetpushers.net/podcast/podcasts/pq-show-81-network-testing-todd
-
-* PQ Show 99: Netmiko & NAPALM For Network Automation 
-
-  http://packetpushers.net/podcast/podcasts/pq-show-99-netmiko-napalm-network-automation
+* http://packetpushers.net/podcast/podcasts/show-176-intro-to-python-automation-for-network-engineers
+* http://packetpushers.net/podcast/podcasts/show-198-kirk-byers-network-automation-python-ansible
+* http://packetpushers.net/podcast/podcasts/show-270-design-build-9-automation-python-netmiko
+* http://packetpushers.net/podcast/podcasts/datanauts-034-automate-packets
+* http://packetpushers.net/podcast/podcasts/pq-show-99-netmiko-napalm-network-automation
 
 
 Chef & Puppet are the older tools 
@@ -197,6 +178,13 @@ YAML is a human friendly data serialization standard for all programming languag
 ## JSON 
 (JavaScript Object Notation) is a lightweight data-interchange format. Seems to be used a lot by newer automation approaches
 * http://json.org/
+
+## ToDD
+A highly extensible framework for distributed capacity and connectivity testing (Testing on Demand....Distributed!) 
+* https://github.com/toddproject/todd
+* https://www.youtube.com/watch?v=ZIykHS5RoNM
+* http://packetpushers.net/podcast/podcasts/pq-show-81-network-testing-todd
+
 
 ## Utilities
 
