@@ -11,7 +11,7 @@ Although the choice of tools to learn is mostly environment based, as most of th
 I note that VIRL has an API too. It would be nice to be able to get Vagrant to build and preconfigure my Ansible VM to be able to playbook the VIRL configuration as well as the VIRL simulations.
 
 
-### Linux Cheat Sheet:
+## Linux Cheat Sheet:
   https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/
 
 ## GIT
@@ -30,8 +30,7 @@ Git is a free and open source distributed version control system designed to han
 * http://keepingitclassless.net/  @mierden 
 
 ## Cisco Network Programmability and DevOps Learning Map - Foundations
-https://communities.cisco.com/docs/DOC-66387
-  links out to training sites some of which are free (including CodeSchool)
+https://communities.cisco.com/docs/DOC-66387 links out to training sites some of which are free (including CodeSchool)
 
 ### Stuff I'm still getting around to adding or looking for good sources:
 * NETCONF 
@@ -44,12 +43,13 @@ https://communities.cisco.com/docs/DOC-66387
 ## LANGUAGES:
 
 ### Python
-* https://www.python.org/
+* https://www.python.org
 * https://www.continuum.io/downloads Anaconda
-* https://developers.google.com/edu/python/ is the website of Google’s (free) python course
-* https://training.talkpython.fm/ also home to a good python podcast
-* http://nedbatchelder.com/text/ PyCon talks good! 
-* Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python"
+* https://developers.google.com/edu/python is the website of Google’s (free) python course
+* https://training.talkpython.fm also home to a good python podcast
+* http://nedbatchelder.com/text PyCon talks good! 
+
+Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python"
 
 ###     PEP8
 Formatting standard for Python - nice except for 80 char line lengths... forget it I'll try keep them under 100 instead.
@@ -61,8 +61,9 @@ An open-source Python library that simplifies SSH management to network devices.
     
 ###     ciscoconfparse 
 ciscoconfparse is a Python library, which parses through Cisco IOS-style configurations
-  Used this to dismantle ACE20 loadbalancer configurations into individual farms (with a little manual checking afterwards)
 * http://www.pennington.net/py/ciscoconfparse  
+
+I used this to dismantle ACE20 loadbalancer configurations into individual farms (with a little manual checking afterwards)
 
 ###     pip installs: netaddr, ipaddress, pyping, pysnmp, 
 * https://netaddr.readthedoc.io/
@@ -78,18 +79,30 @@ ciscoconfparse is a Python library, which parses through Cisco IOS-style configu
 ## Open-source Configuration Management Software
 * https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
   
-Good podcasts on these topics on Packet Pushers 
+Good podcasts on these topics on Packet Pushers: 
+
 * Show 176: Intro To Python & Automation For Network Engineers 
+
   http://packetpushers.net/podcast/podcasts/show-176-intro-to-python-automation-for-network-engineers
+
 * Show 198: Kirk Byers On Network Automation With Python & Ansible  
+
   http://packetpushers.net/podcast/podcasts/show-198-kirk-byers-network-automation-python-ansible
+
 * Show 270: Design & Build 9: Automation With Python And Netmiko 
+
   http://packetpushers.net/podcast/podcasts/show-270-design-build-9-automation-python-netmiko
+
 * Datanauts 034: Automate All The Packets
+
   http://packetpushers.net/podcast/podcasts/datanauts-034-automate-packets
+
 * PQ Show 81: Network Testing With ToDD
+
   http://packetpushers.net/podcast/podcasts/pq-show-81-network-testing-todd
+
 * PQ Show 99: Netmiko & NAPALM For Network Automation 
+
   http://packetpushers.net/podcast/podcasts/pq-show-99-netmiko-napalm-network-automation
 
 
@@ -106,6 +119,7 @@ Puppet consists of a custom declarative language to describe system configuratio
 * https://puppet.com/
 * https://puppet.com/resources/ebook/tools-for-learning-puppet
 * https://github.com/puppetlabs
+
 LEARNING LAB: 
 * https://puppet.com/download-learning-vm  
 
@@ -125,6 +139,7 @@ Combines multi-node deployment, ad-hoc task execution, and configuration managem
 * https://galaxy.ansible.com/Juniper/junos/
 * http://docs.ansible.com/ansible/intro_networking.html
 * http://docs.ansible.com/ansible/ios_config_module.html
+
 LEARNING LAB:
 * https://www.turnkeylinux.org/ansible **Ansible on a VM**
 * https://github.com/turnkeylinux-apps/ansible/blob/master/docs/usage.rst
@@ -133,8 +148,10 @@ LEARNING LAB:
 Salt started out as a tool for remote server management. As its usage has grown, it has gained a number of extended features, including a more comprehensive mechanism for host configuration. This is a relatively new feature facilitated through the Salt States component. With the traction that Salt has gotten in the last bit, the support for more features and platforms might continue to grow.
 * https://saltstack.com/community/ <-best starting point
 * https://blog.talpor.com/2014/07/saltstack-beginners-tutorial/
+
 LEARNING LAB: **uses Vagrant on Virtual Box to setup the lab ie automation in action**
 * https://docs.saltstack.com/en/getstarted/fundamentals/index.html 
+
 
 Been around for awhile:
 
@@ -151,12 +168,13 @@ Oxidized is a network device configuration backup tool. It's a RANCID replacemen
 Vagrant is computer software that creates and configures virtual development environments. It can be seen as a higher-level wrapper around virtualization software such as VirtualBox, VMware, KVM and Linux Containers (LXC), and around configuration management software such as Ansible, Chef, Salt, and Puppet.
 * https://www.vagrantup.com/
 * http://www.vagrantbox.es/
-* http://www.cyberciti.biz/cloud-computing/use-vagrant-to-create-small-virtual-lab-on-linux-osx/
+* http://www.cyberciti.biz/cloud-computing/use-vagrant-to-create-small-virtual-lab-on-linux-osx
 
 ## VirtualBox
 Free equiv to VMware Workstation Pro and you can create desktop shortcuts to start VMs directly
 * https://www.virtualbox.org/wiki/Downloads
 * https://www.virtualbox.org/manual/ch06.html
+
 How to hook your VMware Workstation VM and Virtual Box VM together (to manage VIRL devices etc)
 * http://www.sysprobs.com/setup-network-virtualbox-vmware-virtual-machines
 
@@ -208,3 +226,4 @@ similar purpose to Django
 similar purpose to Django but simpler
 * http://flask.pocoo.org/
 * https://pypi.python.org/pypi/Flask/0.11
+
