@@ -46,9 +46,9 @@ https://communities.cisco.com/docs/DOC-66387
 ### Python
 * https://www.python.org/
 * https://www.continuum.io/downloads Anaconda
-* https://developers.google.com/edu/python/ is the website of Google’s python course
-* https://training.talkpython.fm/  also home to a good python podcast
-* http://nedbatchelder.com/text/  PyCon talks good! 
+* https://developers.google.com/edu/python/ is the website of Google’s (free) python course
+* https://training.talkpython.fm/ also home to a good python podcast
+* http://nedbatchelder.com/text/ PyCon talks good! 
 * Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python"
 
 ###     PEP8
@@ -61,8 +61,8 @@ An open-source Python library that simplifies SSH management to network devices.
     
 ###     ciscoconfparse 
 ciscoconfparse is a Python library, which parses through Cisco IOS-style configurations
-* http://www.pennington.net/py/ciscoconfparse/ 
-Used this to dismantle ACE20 loadbalancer configurations into individual farms (with a little manual checking afterwards)
+  Used this to dismantle ACE20 loadbalancer configurations into individual farms (with a little manual checking afterwards)
+* http://www.pennington.net/py/ciscoconfparse  
 
 ###     pip installs: netaddr, ipaddress, pyping, pysnmp, 
 * https://netaddr.readthedoc.io/
@@ -77,10 +77,21 @@ Used this to dismantle ACE20 loadbalancer configurations into individual farms (
 
 ## Open-source Configuration Management Software
 * https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
-Good podcasts on this topic on Packet Pushers 
-* Datanauts episode 10 & 34 (and 19 is on powershell)
-* Priority Queue 81 Network Testing with ToDD
-* Packet Pushers 270 Automation with Python & Netmiko
+  
+Good podcasts on these topics on Packet Pushers 
+* Show 176: Intro To Python & Automation For Network Engineers 
+  http://packetpushers.net/podcast/podcasts/show-176-intro-to-python-automation-for-network-engineers
+* Show 198: Kirk Byers On Network Automation With Python & Ansible  
+  http://packetpushers.net/podcast/podcasts/show-198-kirk-byers-network-automation-python-ansible
+* Show 270: Design & Build 9: Automation With Python And Netmiko 
+  http://packetpushers.net/podcast/podcasts/show-270-design-build-9-automation-python-netmiko
+* Datanauts 034: Automate All The Packets
+  http://packetpushers.net/podcast/podcasts/datanauts-034-automate-packets
+* PQ Show 81: Network Testing With ToDD
+  http://packetpushers.net/podcast/podcasts/pq-show-81-network-testing-todd
+* PQ Show 99: Netmiko & NAPALM For Network Automation 
+  http://packetpushers.net/podcast/podcasts/pq-show-99-netmiko-napalm-network-automation
+
 
 Chef & Puppet are the older tools 
 
