@@ -23,11 +23,11 @@ Git is a free and open source distributed version control system designed to han
 
 ## Network programming blogs:
 * https://sreeninet.wordpress.com/ 
-* https://codingnetworker.com/ 
+* https://codingnetworker.com/    Henry Ölsner 
 * http://packetlife.net/ 
 * https://jedelman.com/           @jedelman8 
-* https://pynet.twb-tech.com/     @kirkbyers  
-* http://keepingitclassless.net/  @mierden 
+* https://pynet.twb-tech.com/     @kirkbyers   
+* http://keepingitclassless.net/  @mierden  [ToDD creator]
 
 ## Cisco Network Programmability and DevOps Learning Map - Foundations
 https://communities.cisco.com/docs/DOC-66387 links out to training sites some of which are free (including CodeSchool)
@@ -64,6 +64,7 @@ An open-source Python library that simplifies SSH management to network devices.
 ###     ciscoconfparse 
 ciscoconfparse is a Python library, which parses through Cisco IOS-style configurations
 * http://www.pennington.net/py/ciscoconfparse  
+* https://codingnetworker.com/2016/06/parse-cisco-ios-configuration-ciscoconfparse
 
 I used this to dismantle ACE20 loadbalancer configurations into individual farms (with a little manual checking afterwards)
 
