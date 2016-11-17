@@ -35,7 +35,7 @@ https://communities.cisco.com/docs/DOC-66387 links out to training sites some of
 ### Stuff I'm still getting around to adding or looking for good sources:
 * NETCONF 
 * YANG 
-* JINJA2 
+* JINJA2 http://jinja.pocoo.org/
 * JSON 
 * REST API 
 * ToDD [and influxdb] 
