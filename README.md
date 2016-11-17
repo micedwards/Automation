@@ -48,6 +48,8 @@ https://communities.cisco.com/docs/DOC-66387 links out to training sites some of
 * https://developers.google.com/edu/python is the website of Google’s (free) python course
 * https://training.talkpython.fm also home to a good python podcast
 * http://nedbatchelder.com/text PyCon talks good! 
+* https://pythonprogramming.net/introduction-to-python-programming
+* https://pythonprogramming.net/introduction-intermediate-python-tutorial
 
 Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python"
 
