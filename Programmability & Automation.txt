@@ -17,17 +17,17 @@ I note that VIRL has an API too. It would be nice to be able to get Vagrant to b
 ## GIT
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed & efficiency. [Oh that sounds so cute... but it is hard to get your head wrapped around]
 * https://git-scm.com/downloads
-* http://rogerdudler.github.io/git-guide/
+* http://rogerdudler.github.io/git-guide
 * https://git-scm.com/book/en/v2
 * Codeschool has a free introduction GIT lesson
 
 ## Network programming blogs:
-* https://sreeninet.wordpress.com/ 
-* https://codingnetworker.com/    Henry Ölsner 
-* http://packetlife.net/ 
-* https://jedelman.com/           @jedelman8 
-* https://pynet.twb-tech.com/     @kirkbyers   
-* http://keepingitclassless.net/  @mierden  [ToDD creator]
+* https://sreeninet.wordpress.com 
+* https://codingnetworker.com    Henry Ölsner 
+* http://packetlife.net    Jeremy Stretch [NetBox]
+* https://jedelman.com/           @jedelman8 [http://networktocode.com/]
+* https://pynet.twb-tech.com/     @kirkbyers [netmiko]  
+* http://keepingitclassless.net/  @mierden  [ToDD]
 
 ## Cisco Network Programmability and DevOps Learning Map - Foundations
 https://communities.cisco.com/docs/DOC-66387 links out to training sites some of which are free (including CodeSchool)
