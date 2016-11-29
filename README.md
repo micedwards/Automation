@@ -1,15 +1,12 @@
 # Network Programmability & Automation 
-2016.11.16 - Light the New World
+2016.11.29 - Light the New World
 
 Basically a URL dump. Most comments are cribbed from the source site or 
   https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
 
-This was put together as a form of tracking my path through the Automation Jungle.
-
-Although the choice of tools to learn is mostly environment based, as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I'm working through Python 2.7 + netmiko & ciscoconfigparse for simple stuff and adding Ansible. The plan is to build an Ansible VM and connect it to Cisco's VIRL as a test system. 
-
+This was put together as a form of tracking my path through the Automation Jungle.  
+Although the choice of tools to learn is mostly environment based, as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I'm working through Python 2.7 + netmiko & ciscoconfigparse for simple stuff and adding Ansible. The plan is to build an Ansible VM and connect it to Cisco's VIRL as a test system.   
 I note that VIRL has an API too. It would be nice to be able to get Vagrant to build and preconfigure my Ansible VM to be able to playbook the VIRL configuration as well as the VIRL simulations.
-
 
 ## Linux Cheat Sheet:
   https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/
@@ -35,7 +32,7 @@ https://communities.cisco.com/docs/DOC-66387 links out to training sites some of
 ### Stuff I'm still getting around to adding or looking for good sources:
 * NETCONF 
 * YANG 
-* JINJA2 http://jinja.pocoo.org/
+* [JINJA2](http://jinja.pocoo.org/)
 * JSON 
 * REST API 
 * ToDD [and influxdb] 
@@ -51,7 +48,7 @@ https://communities.cisco.com/docs/DOC-66387 links out to training sites some of
 * https://pythonprogramming.net/introduction-to-python-programming
 * https://pythonprogramming.net/introduction-intermediate-python-tutorial
 
-Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python"
+Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python"  
 
 ###     PEP8
 Formatting standard for Python - nice except for 80 char line lengths... forget it I'll try keep them under 100 instead.
@@ -64,9 +61,8 @@ An open-source Python library that simplifies SSH management to network devices.
 ###     ciscoconfparse 
 ciscoconfparse is a Python library, which parses through Cisco IOS-style configurations
 * http://www.pennington.net/py/ciscoconfparse  
-* https://codingnetworker.com/2016/06/parse-cisco-ios-configuration-ciscoconfparse
-
-I used this to dismantle ACE20 loadbalancer configurations into individual farms (with a little manual checking afterwards)
+* https://codingnetworker.com/2016/06/parse-cisco-ios-configuration-ciscoconfparse  
+  I used this to dismantle ACE20 loadbalancer configurations into individual farms (with a little manual checking afterwards)
 
 ###     pip installs: netaddr, ipaddress, pyping, pysnmp, 
 * https://netaddr.readthedoc.io/
