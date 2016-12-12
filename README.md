@@ -1,5 +1,5 @@
 # Network Programmability & Automation 
-2016.11.29 - Light the New World
+2016.12.12 - Light the New World
 
 Basically a URL dump. Most comments are cribbed from the source site or 
   https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
@@ -23,6 +23,7 @@ Git is a free and open source distributed version control system designed to han
 * https://codingnetworker.com    Henry Ölsner 
 * http://packetlife.net    Jeremy Stretch [NetBox]
 * https://jedelman.com/           @jedelman8 [http://networktocode.com/]
+* https://networklore.com/        Patrick Ogenstad
 * https://pynet.twb-tech.com/     @kirkbyers [netmiko]  
 * http://keepingitclassless.net/  @mierden  [ToDD]
 
@@ -67,6 +68,10 @@ ciscoconfparse is a Python library, which parses through Cisco IOS-style configu
 ###     pip installs: netaddr, ipaddress, pyping, pysnmp, 
 * https://netaddr.readthedoc.io/
 * https://docs.python.org/dev/library/ipaddress.html
+
+###     Trigger
+Trigger is a Python framework and suite of tools for interfacing with network devices and managing network configuration and security policy. Trigger was designed to increase the speed and efficiency of network configuration management.
+* https://trigger.readthedocs.io/en/latest/overview.html
 
 
 ## RUBY (Useful for Chef)
@@ -128,9 +133,22 @@ LEARNING LAB:
 Salt started out as a tool for remote server management. As its usage has grown, it has gained a number of extended features, including a more comprehensive mechanism for host configuration. This is a relatively new feature facilitated through the Salt States component. With the traction that Salt has gotten in the last bit, the support for more features and platforms might continue to grow.
 * https://saltstack.com/community/ <-best starting point
 * https://blog.talpor.com/2014/07/saltstack-beginners-tutorial/
-
-LEARNING LAB: **uses Vagrant on Virtual Box to setup the lab ie automation in action**
+###LEARNING LAB: 
+**uses Vagrant on Virtual Box to setup the lab ie automation in action**
 * https://docs.saltstack.com/en/getstarted/fundamentals/index.html 
+
+## StackStorm - Event-Driven Automation
+StackStorm is a powerful open-source automation platform that wires together all of your apps, services and workflows. It’s extendable, flexible, and built with love for DevOps and ChatOps
+* https://stackstorm.com
+* https://docs.stackstorm.com/overview.html
+### StackStorm Exchange
+Automate all the things you already know and use
+with dozens of ready-made integration packs.
+Cloud providers, monitoring services, lightbulbs.
+* https://exchange.stackstorm.org/
+### ST2Vagrant
+Deploy StackStorm event-driven automation platform locally with Vagrant  https://www.stackstorm.com
+* https://github.com/stackstorm/st2vagrant
 
 
 Been around for awhile:
@@ -142,6 +160,25 @@ RANCID monitors a router's (or more generally a device's) configuration, includi
 ## OXIDIZED:
 Oxidized is a network device configuration backup tool. It's a RANCID replacement!
 * https://github.com/ytti/oxidized
+
+
+Mixed stuffs:
+
+## RBFS (REST based file-server)
+RBFS provides a RESTful, JSON based, interface to a file system.
+Highlights:
+* Confirm file integrity with MD5 checking.
+* Store user defined meta-data along with the files.
+* Tracks file change and MD5 history
+* Automatically builds necessary directory structure.
+* HTTP basic authentication support.
+* IP whitelisting or blacklisting.
+* Store and retrieve the history of file changes.
+* File vs. directory action detection.
+* Automatic mimetype header setting based on extention.
+* SSL support
+* Records source IP and DNS name.
+* https://github.com/cidrblock/RBFS
 
 
 ## VAGRANT
@@ -184,6 +221,10 @@ A highly extensible framework for distributed capacity and connectivity testing 
 * https://www.youtube.com/watch?v=ZIykHS5RoNM
 * http://packetpushers.net/podcast/podcasts/pq-show-81-network-testing-todd
 
+## Nelkit (Patrick Ogenstad)
+Networklore Toolkit (Nelkit) is a collection of free tools aimed to help network engineers.
+* https://networklore.com/nelkit
+* https://networklore.com/nk-compare-configs
 
 ## Utilities
 
