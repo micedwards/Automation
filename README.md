@@ -1,9 +1,7 @@
 # Network Programmability & Automation 
 2016.12.19 - Light the New World
 
-This was put together as a form of tracking my path through the network automation jungle.  
-The choice of tools to learn is mostly environment based and as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I am personally working through Python + netmiko & ciscoconfigparse for simple stuff and will be adding Ansible or Salt to the mix. I am using Cisco's VIRL as my test network.   
-VIRL has an API too, it would be nice to able to completely automate the build and configuration of the VIRL test environment...
+This was put together as a form of tracking my path through the network automation jungle.  The choice of tools to learn is mostly environment based and as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I am personally working through Python + netmiko & ciscoconfigparse for simple stuff and will be adding Ansible or Salt to the mix. I am using Cisco's VIRL as my test network. VIRL has an API too, it would be nice to able to completely automate the build and configuration of the VIRL test environment...
 
 Originally started as an URL dump and as a GIT practice project. Most comments are cribbed from the source site or 
   https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
@@ -30,11 +28,8 @@ Git is a free and open source distributed version control system designed to han
 ## Cisco Network Programmability and DevOps Learning Map - Foundations
 https://communities.cisco.com/docs/DOC-66387 links out to training sites some of which are free (including [CodeSchool](https://www.codeschool.com/))
 
-
-## LANGUAGES:
-
+## Coding:
 Matt Thompson's seven part series [getting started with coding](http://vegaskid.net/2016/12/getting-started-with-coding-part-1-introduction/) which almost echos my path... 
-
 
 ### Python
 Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python" (worth reading the first chapter or so of Mistakes before installing any version of Python) 
@@ -66,14 +61,19 @@ ciscoconfparse is a Python library, which parses through Cisco IOS-style configu
 
 ####     TextFSM
 TextFSM is a Python module that implements a template based state machine for parsing semi-formatted text. Originally developed to allow programmatic access to information given by the output of CLI driven devices, such as network routers and switches, it can however be used for any such textual output.
-https://github.com/google/textfsm/wiki/TextFSM
-https://github.com/google/textfsm
-http://www.oznetnerd.com/category/automation/textfsm/
-https://codingnetworker.com/2015/08/parse-cli-outputs-textfsm/
+* https://github.com/google/textfsm/wiki/TextFSM
+* https://github.com/google/textfsm
+* http://www.oznetnerd.com/category/automation/textfsm
+* https://codingnetworker.com/2015/08/parse-cli-outputs-textfsm
 
 ####     pip installs: netaddr & ipaddress 
+IP address & network manipulation
 * https://netaddr.readthedoc.io/
 * https://docs.python.org/dev/library/ipaddress.html
+
+####     JINJA2 
+Jinja2 is a full featured template engine for Python.
+* http://jinja.pocoo.org
 
 ####     Trigger
 Trigger is a Python framework and suite of tools for interfacing with network devices and managing network configuration and security policy. (similar to netmiko/paramiko? haven't looked deep at this yet)
@@ -92,15 +92,6 @@ YAML is a human friendly data serialization standard for all programming languag
 ### JSON 
 (JavaScript Object Notation) is a lightweight data-interchange format. 
 * http://json.org/
-
-### JINJA2 
-Jinja2 is a full featured template engine for Python.
-* http://jinja.pocoo.org
-
-### RUBY (Useful for Chef)
-* http://www.ruby-lang.org/en/
-* http://ruby-doc.org/
-* https://en.wikipedia.org/wiki/Why%27s_(poignant)_Guide_to_Ruby
 
 
 ## Open-source Configuration Management Software
