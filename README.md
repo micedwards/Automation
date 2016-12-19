@@ -33,19 +33,19 @@ https://communities.cisco.com/docs/DOC-66387 links out to training sites some of
 
 ## LANGUAGES:
 
-Seven part [getting started with coding](http://vegaskid.net/2016/12/getting-started-with-coding-part-1-introduction/)
+Matt Thompson's seven part series [getting started with coding](http://vegaskid.net/2016/12/getting-started-with-coding-part-1-introduction/) which almost echos my path... 
 
 
 ### Python
 Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python" (worth reading the first chapter or so of Mistakes before installing any version of Python) 
 * https://www.python.org
 * https://www.continuum.io/downloads Anaconda: Python + development environment (I use this)
-* https://developers.google.com/edu/python is the website of Google’s (free) Python course
-* https://www.codeschool.com/ Codeschool has a free introduction Python lesson
-* https://training.talkpython.fm also home to a good python podcast
-* http://nedbatchelder.com/text PyCon talks good! 
-* https://pythonprogramming.net/introduction-to-python-programming
-* https://pythonprogramming.net/introduction-intermediate-python-tutorial
+* https://developers.google.com/edu/python is the website of Google’s (free) Python course that I first watched
+* https://www.codeschool.com/ Codeschool has a free introduction Python lesson (my second pick)
+* https://training.talkpython.fm which is also home to a good python podcast 
+* http://nedbatchelder.com/text PyCon talks good! (free)
+* https://pythonprogramming.net/introduction-to-python-programming (free)
+* https://pythonprogramming.net/introduction-intermediate-python-tutorial (free)
 
 ####     PEP8
 Formatting standard for Python - nice except for 80 char line lengths... forget it I'll try keep them under 100 instead.
