@@ -61,6 +61,13 @@ ciscoconfparse is a Python library, which parses through Cisco IOS-style configu
 * https://codingnetworker.com/2016/06/parse-cisco-ios-configuration-ciscoconfparse  
   I used this to dismantle ACE20 loadbalancer configurations into individual farms (with a little manual checking afterwards)
 
+####     TextFSM
+TextFSM is a Python module that implements a template based state machine for parsing semi-formatted text. Originally developed to allow programmatic access to information given by the output of CLI driven devices, such as network routers and switches, it can however be used for any such textual output.
+https://github.com/google/textfsm/wiki/TextFSM
+https://github.com/google/textfsm
+http://www.oznetnerd.com/category/automation/textfsm/
+https://codingnetworker.com/2015/08/parse-cli-outputs-textfsm/
+
 ####     pip installs: netaddr & ipaddress 
 * https://netaddr.readthedoc.io/
 * https://docs.python.org/dev/library/ipaddress.html
@@ -232,6 +239,7 @@ Django is a high-level Python Web framework that encourages rapid development an
 
 ###     Pyramid
 similar purpose to Django
+* https://trypyramid.com/
 * http://www.pylonsproject.org/
 
 ###     Flask
@@ -239,9 +247,13 @@ similar purpose to Django but simpler
 * http://flask.pocoo.org/
 * https://pypi.python.org/pypi/Flask/0.11
 
+###     Waitress
+Waitress is meant to be a production-quality pure-Python WSGI server with very acceptable performance. It has no dependencies except ones which live in the Python standard library.
+* http://docs.pylonsproject.org/projects/waitress/en/latest
+
 ###     Postman
 Roll your own API... 
-https://www.getpostman.com/
+https://www.getpostman.com
 
 
 ## Utilities
