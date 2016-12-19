@@ -1,5 +1,5 @@
 # Network Programmability & Automation 
-2016.12.12 - Light the New World
+2016.12.19 - Light the New World
 
 Basically a URL dump. Most comments are cribbed from the source site or 
   https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
@@ -54,30 +54,30 @@ https://learninglabs.cisco.com/tracks/netprog-eng
 
 Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python"  
 
-###     PEP8
+####     PEP8
 Formatting standard for Python - nice except for 80 char line lengths... forget it I'll try keep them under 100 instead.
 
-###     Netmiko
+####     Netmiko
 An open-source Python library that simplifies SSH management to network devices. The library is based on the Paramiko SSH library. 
 * https://pynet.twb-tech.com/
 * Podcast - Packet Pushers #270 Automation with Python & Netmiko
     
-###     ciscoconfparse 
+####     ciscoconfparse 
 ciscoconfparse is a Python library, which parses through Cisco IOS-style configurations
 * http://www.pennington.net/py/ciscoconfparse  
 * https://codingnetworker.com/2016/06/parse-cisco-ios-configuration-ciscoconfparse  
   I used this to dismantle ACE20 loadbalancer configurations into individual farms (with a little manual checking afterwards)
 
-###     pip installs: netaddr, ipaddress, pyping, pysnmp, 
+####     pip installs: netaddr, ipaddress, pyping, pysnmp, 
 * https://netaddr.readthedoc.io/
 * https://docs.python.org/dev/library/ipaddress.html
 
-###     Trigger
+####     Trigger
 Trigger is a Python framework and suite of tools for interfacing with network devices and managing network configuration and security policy. Trigger was designed to increase the speed and efficiency of network configuration management.
 * https://trigger.readthedocs.io/en/latest/overview.html
 
 
-## RUBY (Useful for Chef)
+### RUBY (Useful for Chef)
 * http://www.ruby-lang.org/en/
 * http://ruby-doc.org/
 * https://en.wikipedia.org/wiki/Why%27s_(poignant)_Guide_to_Ruby
@@ -96,13 +96,13 @@ Good podcasts on these topics on Packet Pushers:
 
 Chef & Puppet are the older tools 
 
-## CHEF
+### CHEF
 Chef is a configuration management tool written in Ruby, and uses a pure Ruby DSL for writing configuration "recipes". These recipes contain resources that should be put into the declared state. Chef can be used as a client–server tool, or used in "solo" mode
 * https://www.chef.io/
 * https://learn.chef.io/
 * https://github.com/chef/chef
     
-## PUPPET
+### PUPPET
 Puppet consists of a custom declarative language to describe system configuration, distributed using the client–server paradigm, and a library to realize the configuration. The resource abstraction layer enables administrators to describe the configuration in high-level terms, such as users, services and packages. Puppet will then ensure the server's state matches the description. 
 * https://puppet.com/
 * https://puppet.com/resources/ebook/tools-for-learning-puppet
@@ -115,7 +115,7 @@ LEARNING LAB:
 One engineers view of Salt & Ansible, useful for an overview of both:
 * http://jensrantil.github.io/salt-vs-ansible.html
 
-## ANSIBLE
+### ANSIBLE
 Combines multi-node deployment, ad-hoc task execution, and configuration management in one package. Manages nodes over SSH and requires python (2.4 or later) to be installed on them. Modules work over JSON and standard output and can be written in any language. Uses YAML to express reusable descriptions of systems.
 * https://www.ansible.com/
 * https://www.ansible.com/quick-start-video
@@ -132,11 +132,12 @@ LEARNING LAB:
 * https://www.turnkeylinux.org/ansible **Ansible on a VM**
 * https://github.com/turnkeylinux-apps/ansible/blob/master/docs/usage.rst
 
-## SALT
+### SALT
 Salt started out as a tool for remote server management. As its usage has grown, it has gained a number of extended features, including a more comprehensive mechanism for host configuration. This is a relatively new feature facilitated through the Salt States component. With the traction that Salt has gotten in the last bit, the support for more features and platforms might continue to grow.
 * https://saltstack.com/community/ <-best starting point
 * https://blog.talpor.com/2014/07/saltstack-beginners-tutorial/
-###LEARNING LAB: 
+
+LEARNING LAB: 
 **uses Vagrant on Virtual Box to setup the lab ie automation in action**
 * https://docs.saltstack.com/en/getstarted/fundamentals/index.html 
 
@@ -155,19 +156,18 @@ Deploy StackStorm event-driven automation platform locally with Vagrant  https:/
 
 
 Been around for awhile:
-
 ## RANCID
 RANCID monitors a router's (or more generally a device's) configuration, including software and hardware (cards, serial numbers, etc) and uses CVS (Concurrent Version System) or Subversion to maintain history of changes
 * http://www.shrubbery.net/rancid/
-
+as has:
 ## OXIDIZED:
 Oxidized is a network device configuration backup tool. It's a RANCID replacement!
 * https://github.com/ytti/oxidized
 
 
-Mixed stuffs:
+##Mixed stuffs:
 
-## RBFS (REST based file-server)
+### RBFS (REST based file-server)
 RBFS provides a RESTful, JSON based, interface to a file system.
 Highlights:
 * Confirm file integrity with MD5 checking.
@@ -184,13 +184,13 @@ Highlights:
 * https://github.com/cidrblock/RBFS
 
 
-## VAGRANT
+### VAGRANT
 Vagrant is computer software that creates and configures virtual development environments. It can be seen as a higher-level wrapper around virtualization software such as VirtualBox, VMware, KVM and Linux Containers (LXC), and around configuration management software such as Ansible, Chef, Salt, and Puppet.
 * https://www.vagrantup.com/
 * http://www.vagrantbox.es/
 * http://www.cyberciti.biz/cloud-computing/use-vagrant-to-create-small-virtual-lab-on-linux-osx
 
-## VirtualBox
+### VirtualBox
 Free equiv to VMware Workstation Pro and you can create desktop shortcuts to start VMs directly
 * https://www.virtualbox.org/wiki/Downloads
 * https://www.virtualbox.org/manual/ch06.html
@@ -198,11 +198,11 @@ Free equiv to VMware Workstation Pro and you can create desktop shortcuts to sta
 How to hook your VMware Workstation VM and Virtual Box VM together (to manage VIRL devices etc)
 * http://www.sysprobs.com/setup-network-virtualbox-vmware-virtual-machines
 
-## VMware stuff:
+### VMware stuff:
 * https://rednectar.net/2011/07/20/vmware-interfaces-tutorial/
 * http://www.virtualizationadmin.com/articles-tutorials/vmware-server-workstation-player-articles/understanding-virtual-networking-vmware-workstation-9.html
      
-## Turnkey Linux 
+### Turnkey Linux 
 VMs/ISOs/containers for various purposes:
 * https://www.turnkeylinux.org/
 * https://www.turnkeylinux.org/core  
