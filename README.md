@@ -57,6 +57,9 @@ Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "
 ####     PEP8
 Formatting standard for Python - nice except for 80 char line lengths... forget it I'll try keep them under 100 instead.
 
+####     Six: Python 2 and 3 Compatibility Library
+https://pythonhosted.org/six/
+
 ####     Netmiko
 An open-source Python library that simplifies SSH management to network devices. The library is based on the Paramiko SSH library. 
 * https://pynet.twb-tech.com/
