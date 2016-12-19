@@ -1,58 +1,48 @@
 # Network Programmability & Automation 
 2016.12.19 - Light the New World
 
-Basically a URL dump. Most comments are cribbed from the source site or 
-  https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
+This was put together as a form of tracking my path through the network automation jungle.  
+The choice of tools to learn is mostly environment based and as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I am personally working through Python + netmiko & ciscoconfigparse for simple stuff and will be adding Ansible or Salt to the mix. I am using Cisco's VIRL as my test network.   
+VIRL has an API too, it would be nice to able to completely automate the build and configuration of the VIRL test environment...
 
-This was put together as a form of tracking my path through the Automation Jungle.  
-Although the choice of tools to learn is mostly environment based, as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I'm working through Python 2.7 + netmiko & ciscoconfigparse for simple stuff and adding Ansible. The plan is to build an Ansible VM and connect it to Cisco's VIRL as a test system.   
-I note that VIRL has an API too. It would be nice to be able to get Vagrant to build and preconfigure my Ansible VM to be able to playbook the VIRL configuration as well as the VIRL simulations.
+Originally started as an URL dump and as a GIT practice project. Most comments are cribbed from the source site or 
+  https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
 
 ## Linux Cheat Sheet:
   https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/
 
 ## GIT
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed & efficiency. [Oh that sounds so cute... but it is hard to get your head wrapped around]
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed & efficiency. [Oh that sounds so cute... but it is hard to get your head wrapped around how git works]
 * https://git-scm.com/downloads
 * http://rogerdudler.github.io/git-guide
 * https://git-scm.com/book/en/v2
-* Codeschool has a free introduction GIT lesson
+* https://www.codeschool.com/ Codeschool has a free introduction GIT lesson (learn by doing)
 
 ## Network programming blogs:
+* https://jedelman.com/           @jedelman8 [http://networktocode.com/]
+* https://pynet.twb-tech.com/     @kirkbyers [netmiko]  
+* https://networklore.com/        Patrick Ogenstad
+* http://keepingitclassless.net/  @mierden  [ToDD]
 * https://sreeninet.wordpress.com 
 * https://codingnetworker.com    Henry Ölsner 
 * http://packetlife.net    Jeremy Stretch [NetBox]
-* https://jedelman.com/           @jedelman8 [http://networktocode.com/]
-* https://networklore.com/        Patrick Ogenstad
-* https://pynet.twb-tech.com/     @kirkbyers [netmiko]  
-* http://keepingitclassless.net/  @mierden  [ToDD]
 
 ## Cisco Network Programmability and DevOps Learning Map - Foundations
-https://communities.cisco.com/docs/DOC-66387 links out to training sites some of which are free (including CodeSchool)
-## Cisco DevNet - Network Programmability for Network Engineers
-Learn about network programmability from the perspective of a Network Engineer. Contains information about programming, REST APIs, as well as new interfaces like RESTCONF.
-https://learninglabs.cisco.com/tracks/netprog-eng 
+https://communities.cisco.com/docs/DOC-66387 links out to training sites some of which are free (including [CodeSchool](https://www.codeschool.com/))
 
-### Stuff I'm still getting around to adding or looking for good sources:
-* NETCONF 
-* YANG 
-* [JINJA2](http://jinja.pocoo.org/)
-* JSON 
-* REST API 
-* ToDD [and influxdb] 
 
 ## LANGUAGES:
 
 ### Python
+Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python" (worth reading the first chapter or so of Mistakes before installing any version of Python) 
 * https://www.python.org
-* https://www.continuum.io/downloads Anaconda
-* https://developers.google.com/edu/python is the website of Google’s (free) python course
+* https://www.continuum.io/downloads Anaconda: Python + development environment (I use this)
+* https://developers.google.com/edu/python is the website of Google’s (free) Python course
+* https://www.codeschool.com/ Codeschool has a free introduction Python lesson
 * https://training.talkpython.fm also home to a good python podcast
 * http://nedbatchelder.com/text PyCon talks good! 
 * https://pythonprogramming.net/introduction-to-python-programming
 * https://pythonprogramming.net/introduction-intermediate-python-tutorial
-
-Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python"  
 
 ####     PEP8
 Formatting standard for Python - nice except for 80 char line lengths... forget it I'll try keep them under 100 instead.
@@ -63,7 +53,7 @@ https://pythonhosted.org/six/
 ####     Netmiko
 An open-source Python library that simplifies SSH management to network devices. The library is based on the Paramiko SSH library. 
 * https://pynet.twb-tech.com/
-* Podcast - Packet Pushers #270 Automation with Python & Netmiko
+* [Podcast - Packet Pushers #270 Automation with Python & Netmiko](http://packetpushers.net/podcast/podcasts/show-270-design-build-9-automation-python-netmiko/)
     
 ####     ciscoconfparse 
 ciscoconfparse is a Python library, which parses through Cisco IOS-style configurations
@@ -71,14 +61,31 @@ ciscoconfparse is a Python library, which parses through Cisco IOS-style configu
 * https://codingnetworker.com/2016/06/parse-cisco-ios-configuration-ciscoconfparse  
   I used this to dismantle ACE20 loadbalancer configurations into individual farms (with a little manual checking afterwards)
 
-####     pip installs: netaddr, ipaddress, pyping, pysnmp, 
+####     pip installs: netaddr & ipaddress 
 * https://netaddr.readthedoc.io/
 * https://docs.python.org/dev/library/ipaddress.html
 
 ####     Trigger
-Trigger is a Python framework and suite of tools for interfacing with network devices and managing network configuration and security policy. Trigger was designed to increase the speed and efficiency of network configuration management.
+Trigger is a Python framework and suite of tools for interfacing with network devices and managing network configuration and security policy. (similar to netmiko/paramiko? haven't looked deep at this yet)
 * https://trigger.readthedocs.io/en/latest/overview.html
 
+### Cisco DevNet - Network Programmability for Network Engineers
+Training modules on programming REST APIs, NETCONF, RESTCONF and APIC-EM APIs.
+https://learninglabs.cisco.com/tracks/netprog-eng 
+
+### YAML: YAML Ain't Markup Language
+YAML is a human friendly data serialization standard for all programming languages.
+* http://yaml.org/
+* http://docs.ansible.com/ansible/YAMLSyntax.html
+* http://www.yaml.org/spec/1.2/spec.html
+
+### JSON 
+(JavaScript Object Notation) is a lightweight data-interchange format. 
+* http://json.org/
+
+### JINJA2 
+Jinja2 is a full featured template engine for Python.
+* http://jinja.pocoo.org
 
 ### RUBY (Useful for Chef)
 * http://www.ruby-lang.org/en/
@@ -144,31 +151,21 @@ LEARNING LAB:
 **uses Vagrant on Virtual Box to setup the lab ie automation in action**
 * https://docs.saltstack.com/en/getstarted/fundamentals/index.html 
 
-## StackStorm - Event-Driven Automation
-StackStorm is a powerful open-source automation platform that wires together all of your apps, services and workflows. It’s extendable, flexible, and built with love for DevOps and ChatOps
+### StackStorm - Event-Driven Automation
+StackStorm is a powerful open-source automation platform that wires together all of your apps, services and workflows. 
 * https://stackstorm.com
 * https://docs.stackstorm.com/overview.html
 * https://keepingitclassless.net/2016/12/introduction-to-stackstorm
+* https://github.com/StackStorm/st2
 
-### StackStorm Exchange
+#### StackStorm Exchange
 Automate all the things you already know and use
 with dozens of ready-made integration packs.
 Cloud providers, monitoring services, lightbulbs.
-* https://exchange.stackstorm.org/
-### ST2Vagrant
+* https://exchange.stackstorm.org
+#### ST2Vagrant
 Deploy StackStorm event-driven automation platform locally with Vagrant  https://www.stackstorm.com
 * https://github.com/stackstorm/st2vagrant
-
-
-Been around for awhile:
-## RANCID
-RANCID monitors a router's (or more generally a device's) configuration, including software and hardware (cards, serial numbers, etc) and uses CVS (Concurrent Version System) or Subversion to maintain history of changes
-* http://www.shrubbery.net/rancid/
-as has:
-## OXIDIZED:
-Oxidized is a network device configuration backup tool. It's a RANCID replacement!
-* https://github.com/ytti/oxidized
-
 
 ##Mixed stuffs:
 
@@ -187,7 +184,6 @@ Highlights:
 * SSL support
 * Records source IP and DNS name.
 * https://github.com/cidrblock/RBFS
-
 
 ### VAGRANT
 Vagrant is computer software that creates and configures virtual development environments. It can be seen as a higher-level wrapper around virtualization software such as VirtualBox, VMware, KVM and Linux Containers (LXC), and around configuration management software such as Ansible, Chef, Salt, and Puppet.
@@ -213,16 +209,6 @@ VMs/ISOs/containers for various purposes:
 * https://www.turnkeylinux.org/core  
 * https://www.turnkeylinux.org/ansible
 
-## YAML: YAML Ain't Markup Language
-YAML is a human friendly data serialization standard for all programming languages.
-* http://yaml.org/
-* http://docs.ansible.com/ansible/YAMLSyntax.html
-* http://www.yaml.org/spec/1.2/spec.html
-
-## JSON 
-(JavaScript Object Notation) is a lightweight data-interchange format. Seems to be used a lot by newer automation approaches
-* http://json.org/
-
 ## ToDD
 A highly extensible framework for distributed capacity and connectivity testing (Testing on Demand....Distributed!) 
 * https://github.com/toddproject/todd
@@ -233,16 +219,6 @@ A highly extensible framework for distributed capacity and connectivity testing 
 Networklore Toolkit (Nelkit) is a collection of free tools aimed to help network engineers.
 * https://networklore.com/nelkit
 * https://networklore.com/nk-compare-configs
-
-## Utilities
-
-DNS (The virtual world)
-* https://www.turnkeylinux.org/forum/general/20110413/simplest-dns-server
-* http://www.virtualizationhowto.com/2015/04/lightweight-dns-server-vmware-lab/
-
-IP address management (IPAM) and data center infrastructure management (DCIM) tool. 
-* https://github.com/digitalocean/netbox
-
 
 ## Front ends 
 (really more like 'getting severely sidetracked')    
@@ -262,4 +238,15 @@ similar purpose to Django
 similar purpose to Django but simpler
 * http://flask.pocoo.org/
 * https://pypi.python.org/pypi/Flask/0.11
+
+###     Postman
+Roll your own API... 
+https://www.getpostman.com/
+
+
+## Utilities
+
+DNS (the virtual world)
+* https://www.turnkeylinux.org/forum/general/20110413/simplest-dns-server
+* http://www.virtualizationhowto.com/2015/04/lightweight-dns-server-vmware-lab/
 
