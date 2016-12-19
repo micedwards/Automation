@@ -29,6 +29,9 @@ Git is a free and open source distributed version control system designed to han
 
 ## Cisco Network Programmability and DevOps Learning Map - Foundations
 https://communities.cisco.com/docs/DOC-66387 links out to training sites some of which are free (including CodeSchool)
+## Cisco DevNet - Network Programmability for Network Engineers
+Learn about network programmability from the perspective of a Network Engineer. Contains information about programming, REST APIs, as well as new interfaces like RESTCONF.
+https://learninglabs.cisco.com/tracks/netprog-eng 
 
 ### Stuff I'm still getting around to adding or looking for good sources:
 * NETCONF 
