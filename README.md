@@ -33,6 +33,9 @@ https://communities.cisco.com/docs/DOC-66387 links out to training sites some of
 
 ## LANGUAGES:
 
+Seven part [getting started with coding](http://vegaskid.net/2016/12/getting-started-with-coding-part-1-introduction/)
+
+
 ### Python
 Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python" (worth reading the first chapter or so of Mistakes before installing any version of Python) 
 * https://www.python.org
@@ -53,7 +56,7 @@ https://pythonhosted.org/six/
 ####     Netmiko
 An open-source Python library that simplifies SSH management to network devices. The library is based on the Paramiko SSH library. 
 * https://pynet.twb-tech.com/
-* [Podcast - Packet Pushers #270 Automation with Python & Netmiko](http://packetpushers.net/podcast/podcasts/show-270-design-build-9-automation-python-netmiko/)
+* [Packet Pushers #270 Automation with Python & Netmiko](http://packetpushers.net/podcast/podcasts/show-270-design-build-9-automation-python-netmiko/)
     
 ####     ciscoconfparse 
 ciscoconfparse is a Python library, which parses through Cisco IOS-style configurations
