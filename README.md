@@ -145,6 +145,8 @@ LEARNING LAB:
 StackStorm is a powerful open-source automation platform that wires together all of your apps, services and workflows. It’s extendable, flexible, and built with love for DevOps and ChatOps
 * https://stackstorm.com
 * https://docs.stackstorm.com/overview.html
+* https://keepingitclassless.net/2016/12/introduction-to-stackstorm
+
 ### StackStorm Exchange
 Automate all the things you already know and use
 with dozens of ready-made integration packs.
