@@ -1,5 +1,5 @@
 # Network Programmability & Automation 
-2016.12.19 - Light the New World
+2016.12.20 - Light the New World
 
 This was put together as a form of tracking my path through the network automation jungle.  The choice of tools to learn is mostly environment based and as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I am personally working through Python + netmiko & ciscoconfigparse for simple stuff and will be adding Ansible or Salt to the mix. I am using Cisco's VIRL as my test network. VIRL has an API too, it would be nice to able to completely automate the build and configuration of the VIRL test environment...
 
@@ -37,6 +37,7 @@ Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "
 * https://www.continuum.io/downloads Anaconda: Python + development environment (I use this)
 * https://developers.google.com/edu/python is the website of Google’s (free) Python course that I first watched
 * https://www.codeschool.com/ Codeschool has a free introduction Python lesson (my second pick)
+* https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
 * https://training.talkpython.fm which is also home to a good python podcast 
 * http://nedbatchelder.com/text PyCon talks good! (free)
 * https://pythonprogramming.net/introduction-to-python-programming (free)
