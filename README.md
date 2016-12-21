@@ -89,6 +89,8 @@ YAML is a human friendly data serialization standard for all programming languag
 * http://yaml.org/
 * http://docs.ansible.com/ansible/YAMLSyntax.html
 * http://www.yaml.org/spec/1.2/spec.html
+Check the validity of your YAML and errors + get a nice clean UTF-8 version of it.
+* http://www.yamllint.com
 
 ### JSON 
 (JavaScript Object Notation) is a lightweight data-interchange format. 
@@ -139,6 +141,7 @@ Combines multi-node deployment, ad-hoc task execution, and configuration managem
 * https://galaxy.ansible.com/Juniper/junos/
 * http://docs.ansible.com/ansible/intro_networking.html
 * http://docs.ansible.com/ansible/ios_config_module.html
+* https://cidrblock.github.io/ansible-playbook-from-the-ground-up.html
 
 LEARNING LAB:
 * https://www.turnkeylinux.org/ansible **Ansible on a VM**
