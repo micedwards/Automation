@@ -33,6 +33,7 @@ Matt Thompson's seven part series [getting started with coding](http://vegaskid.
 
 ### Python
 Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python" (worth reading the first chapter or so of Mistakes before installing any version of Python) 
+
 * https://www.python.org
 * https://www.continuum.io/downloads Anaconda: Python + development environment (I use this)
 * https://developers.google.com/edu/python is the website of Google’s (free) Python course that I first watched
@@ -69,7 +70,9 @@ TextFSM is a Python module that implements a template based state machine for pa
 
 ####     pip installs: netaddr & ipaddress 
 IP address & network manipulation
-* https://netaddr.readthedoc.io/
+* https://pythonhosted.org/netaddr/installation.html
+* https://pythonhosted.org/netaddr/tutorial_01.html
+* https://docs.python.org/3/howto/ipaddress.html
 * https://docs.python.org/dev/library/ipaddress.html
 
 ####     JINJA2 
@@ -138,6 +141,7 @@ Combines multi-node deployment, ad-hoc task execution, and configuration managem
 * https://github.com/ansible/ansible
 * https://networklore.com/ansible-getting-started/
 * http://jpmens.net/2012/06/06/configuration-management-with-ansible/
+* http://www.oreilly.com/webops-perf/free/network-automation-with-ansible.csp
 * https://galaxy.ansible.com/Juniper/junos/
 * http://docs.ansible.com/ansible/intro_networking.html
 * http://docs.ansible.com/ansible/ios_config_module.html
