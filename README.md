@@ -1,5 +1,6 @@
 # Network Programmability & Automation 
-2016.12.20 - Light the New World
+### Light the New World
+2016.12.23
 
 This was put together as a form of tracking my path through the network automation jungle.  The choice of tools to learn is mostly environment based and as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I am personally working through Python + netmiko & ciscoconfigparse for simple stuff and will be adding Ansible or Salt to the mix. I am using Cisco's VIRL as my test network. VIRL has an API too, it would be nice to able to completely automate the build and configuration of the VIRL test environment...
 
@@ -26,7 +27,15 @@ Git is a free and open source distributed version control system designed to han
 * http://packetlife.net    Jeremy Stretch [NetBox]
 
 ## Cisco Network Programmability and DevOps Learning Map - Foundations
-https://communities.cisco.com/docs/DOC-66387 links out to training sites some of which are free (including [CodeSchool](https://www.codeschool.com/))
+Links out to training sites some of which are free (including [CodeSchool](https://www.codeschool.com/)) Hopefully still current (reminder to check again February 2017)
+* https://communities.cisco.com/docs/DOC-66387 
+
+### Cisco DevNet
+Training modules on Python, REST APIs, NETCONF, RESTCONF and APIC-EM APIs. Looks like an overview of the area, I'll update once I've run through them. Just need a Cisco CCO ID.
+#### Network Programmability for Network Engineers
+* https://learninglabs.cisco.com/tracks/netprog-eng 
+#### DevNet Express for Digital Network Architecture (DNA)
+* https://learninglabs.cisco.com/tracks/devnet-express-dna
 
 ## Coding:
 Matt Thompson's seven part series [getting started with coding](http://vegaskid.net/2016/12/getting-started-with-coding-part-1-introduction/) which almost echos my path... 
@@ -40,7 +49,7 @@ Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "
 * https://www.codeschool.com/ Codeschool has a free introduction Python lesson (my second pick)
 * https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
 * https://training.talkpython.fm which is also home to a good python podcast 
-* http://nedbatchelder.com/text PyCon talks good! (free)
+* http://nedbatchelder.com/text More advanced; PyCon talks good! (free)
 * https://pythonprogramming.net/introduction-to-python-programming (free)
 * https://pythonprogramming.net/introduction-intermediate-python-tutorial (free)
 
@@ -83,9 +92,6 @@ Jinja2 is a full featured template engine for Python.
 Trigger is a Python framework and suite of tools for interfacing with network devices and managing network configuration and security policy. (similar to netmiko/paramiko? haven't looked deep at this yet)
 * https://trigger.readthedocs.io/en/latest/overview.html
 
-### Cisco DevNet - Network Programmability for Network Engineers
-Training modules on programming REST APIs, NETCONF, RESTCONF and APIC-EM APIs.
-https://learninglabs.cisco.com/tracks/netprog-eng 
 
 ### YAML: YAML Ain't Markup Language
 YAML is a human friendly data serialization standard for all programming languages.
@@ -98,6 +104,10 @@ Check the validity of your YAML and errors + get a nice clean UTF-8 version of i
 ### JSON 
 (JavaScript Object Notation) is a lightweight data-interchange format. 
 * http://json.org/
+
+###     Postman
+Roll your own API... 
+https://www.getpostman.com
 
 
 ## Open-source Configuration Management Software
@@ -180,18 +190,6 @@ Deploy StackStorm event-driven automation platform locally with Vagrant  https:/
 
 ### RBFS (REST based file-server)
 RBFS provides a RESTful, JSON based, interface to a file system.
-Highlights:
-* Confirm file integrity with MD5 checking.
-* Store user defined meta-data along with the files.
-* Tracks file change and MD5 history
-* Automatically builds necessary directory structure.
-* HTTP basic authentication support.
-* IP whitelisting or blacklisting.
-* Store and retrieve the history of file changes.
-* File vs. directory action detection.
-* Automatic mimetype header setting based on extention.
-* SSL support
-* Records source IP and DNS name.
 * https://github.com/cidrblock/RBFS
 
 ### VAGRANT
@@ -206,6 +204,7 @@ Free equiv to VMware Workstation Pro and you can create desktop shortcuts to sta
 * https://www.virtualbox.org/manual/ch06.html
 
 How to hook your VMware Workstation VM and Virtual Box VM together (to manage VIRL devices etc)
+Sadly won't work with VMware Player...
 * http://www.sysprobs.com/setup-network-virtualbox-vmware-virtual-machines
 
 ### VMware stuff:
@@ -252,15 +251,4 @@ similar purpose to Django but simpler
 ###     Waitress
 Waitress is meant to be a production-quality pure-Python WSGI server with very acceptable performance. It has no dependencies except ones which live in the Python standard library.
 * http://docs.pylonsproject.org/projects/waitress/en/latest
-
-###     Postman
-Roll your own API... 
-https://www.getpostman.com
-
-
-## Utilities
-
-DNS (the virtual world)
-* https://www.turnkeylinux.org/forum/general/20110413/simplest-dns-server
-* http://www.virtualizationhowto.com/2015/04/lightweight-dns-server-vmware-lab/
 
