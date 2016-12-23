@@ -32,8 +32,10 @@ Links out to training sites some of which are free (including [CodeSchool](https
 
 ### Cisco DevNet
 Training modules on Python, REST APIs, NETCONF, RESTCONF and APIC-EM APIs. Looks like an overview of the area, I'll update once I've run through them. Just need a Cisco CCO ID.
+
 #### Network Programmability for Network Engineers
 * https://learninglabs.cisco.com/tracks/netprog-eng 
+
 #### DevNet Express for Digital Network Architecture (DNA)
 * https://learninglabs.cisco.com/tracks/devnet-express-dna
 
