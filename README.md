@@ -1,105 +1,112 @@
 # Network Programmability & Automation 
 ### Light the New World
-2016.12.23
+2017.02.06
 
-This was put together as a form of tracking my path through the network automation jungle.  The choice of tools to learn is mostly environment based and as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I am personally working through Python + netmiko & ciscoconfigparse for simple stuff and will be adding Ansible or Salt to the mix. I am using Cisco's VIRL as my test network. VIRL has an API too, it would be nice to able to completely automate the build and configuration of the VIRL test environment...
+This was put together as a form of tracking my path through the network automation jungle.  The choice of tools to learn is mostly environment based and as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I am personally working through Python + netmiko & ciscoconfigparse for simple stuff and will be adding Ansible to the mix. I am using Cisco's VIRL as my test network. VIRL has an API too, it would be nice to able to completely automate the build and configuration of the VIRL test environment... 
 
 Originally started as an URL dump and as a GIT practice project. Most comments are cribbed from the source site or 
   https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
 
+#### Feb update
+A new year and I'm making this a little more focused dropping Chef, Puppet and Salt. 
+
+## teaser
+* http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL
+
+
 ## Linux Cheat Sheet:
+A little UNIX knowledge helps...
   https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/
 
 ## GIT
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed & efficiency. [Oh that sounds so cute... but it is hard to get your head wrapped around how git works]
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed & efficiency. [it is hard to get your head wrapped around how git works]
 * https://git-scm.com/downloads
+* https://desktop.github.com/ GUI + shell or powershell interface [I use the shell version]
 * http://rogerdudler.github.io/git-guide
 * https://git-scm.com/book/en/v2
 * https://www.codeschool.com/ Codeschool has a free introduction GIT lesson (learn by doing)
 
-## Network programming blogs:
-* https://jedelman.com/           @jedelman8 [http://networktocode.com/]
-* https://pynet.twb-tech.com/     @kirkbyers [netmiko]  
-* https://networklore.com/        Patrick Ogenstad
-* http://keepingitclassless.net/  @mierden  [ToDD]
+## Network automation blogs:
+* https://jedelman.com/          @jedelman8 
+* https://pynet.twb-tech.com/    @kirkbyers [netmiko]  
+* https://networklore.com/       Patrick Ogenstad
+* http://keepingitclassless.net/ @mierden  [ToDD]
+* http://ipSpace.net/            @ioshints Ivan Pepelnjak [web seminars as well]
+* http://packetpushers.net/      lots of blogs and podcasts...
 * https://sreeninet.wordpress.com 
 * https://codingnetworker.com    Henry Ölsner 
-* http://packetlife.net    Jeremy Stretch [NetBox]
 
-## Cisco Network Programmability and DevOps Learning Map - Foundations
+## Network automation training:
+* http://networktocode.com/	Jason Edelman's company for training + labs [also join his slack group here]
+* http://ipSpace.net/ Ivan Pepelnjak's company with many (live/recorded) web seminars in subscription or buy options
+
+## Cisco Network Programmability and DevOps
 Links out to training sites some of which are free (including [CodeSchool](https://www.codeschool.com/)) Hopefully still current (reminder to check again February 2017)
 * https://communities.cisco.com/docs/DOC-66387 
-
-### Cisco DevNet
-Training modules on Python, REST APIs, NETCONF, RESTCONF and APIC-EM APIs. Looks like an overview of the area, I'll update once I've run through them. Just need a Cisco CCO ID.
-
-#### Network Programmability for Network Engineers
 * https://learninglabs.cisco.com/tracks/netprog-eng 
-
-#### DevNet Express for Digital Network Architecture (DNA)
 * https://learninglabs.cisco.com/tracks/devnet-express-dna
-
-## Coding:
-Matt Thompson's seven part series [getting started with coding](http://vegaskid.net/2016/12/getting-started-with-coding-part-1-introduction/) which almost echos my path... 
 
 ### Python
 Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python" (worth reading the first chapter or so of Mistakes before installing any version of Python) 
-
 * https://www.python.org
 * https://www.continuum.io/downloads Anaconda: Python + development environment (I use this)
 * https://developers.google.com/edu/python is the website of Google’s (free) Python course that I first watched
 * https://www.codeschool.com/ Codeschool has a free introduction Python lesson (my second pick)
 * https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
-* https://training.talkpython.fm which is also home to a good python podcast 
+* https://training.talkpython.fm also home to a good python podcast on the main site talkpython.fm 
 * http://nedbatchelder.com/text More advanced; PyCon talks good! (free)
 * https://pythonprogramming.net/introduction-to-python-programming (free)
 * https://pythonprogramming.net/introduction-intermediate-python-tutorial (free)
 
-####     PEP8
-Formatting standard for Python - nice except for 80 char line lengths... forget it I'll try keep them under 100 instead.
+#### more advanced python stuff
+* https://www.fullstackpython.com/ pushing your knowledge further
+* https://awesome-python.com/ Curated list of frameworks, libraries, software and resources.
 
-####     Six: Python 2 and 3 Compatibility Library
-https://pythonhosted.org/six/
-
-####     Netmiko
+#### Netmiko
 An open-source Python library that simplifies SSH management to network devices. The library is based on the Paramiko SSH library. 
 * https://pynet.twb-tech.com/
 * [Packet Pushers #270 Automation with Python & Netmiko](http://packetpushers.net/podcast/podcasts/show-270-design-build-9-automation-python-netmiko/)
     
-####     ciscoconfparse 
+#### ciscoconfparse 
 ciscoconfparse is a Python library, which parses through Cisco IOS-style configurations
 * http://www.pennington.net/py/ciscoconfparse  
 * https://codingnetworker.com/2016/06/parse-cisco-ios-configuration-ciscoconfparse  
   I used this to dismantle ACE20 loadbalancer configurations into individual farms (with a little manual checking afterwards)
 
-####     TextFSM
+#### TextFSM
 TextFSM is a Python module that implements a template based state machine for parsing semi-formatted text. Originally developed to allow programmatic access to information given by the output of CLI driven devices, such as network routers and switches, it can however be used for any such textual output.
 * https://github.com/google/textfsm/wiki/TextFSM
 * https://github.com/google/textfsm
 * http://www.oznetnerd.com/category/automation/textfsm
 * https://codingnetworker.com/2015/08/parse-cli-outputs-textfsm
 
-####     pip installs: netaddr & ipaddress 
+#### pip installs: netaddr & ipaddress 
 IP address & network manipulation
 * https://pythonhosted.org/netaddr/installation.html
 * https://pythonhosted.org/netaddr/tutorial_01.html
 * https://docs.python.org/3/howto/ipaddress.html
 * https://docs.python.org/dev/library/ipaddress.html
 
-####     JINJA2 
+#### JINJA2 
 Jinja2 is a full featured template engine for Python.
 * http://jinja.pocoo.org
 
-####     Trigger
-Trigger is a Python framework and suite of tools for interfacing with network devices and managing network configuration and security policy. (similar to netmiko/paramiko? haven't looked deep at this yet)
+#### Trigger
+Trigger is a Python framework and suite of tools for interfacing with network devices and managing network configuration and security policy. (similar to netmiko/paramiko? haven't looked deep at this yet and it's not high on the list of things to do) 
 * https://trigger.readthedocs.io/en/latest/overview.html
 
+#### NAPALM (Network Automation and Programmability Abstraction Layer with Multivendor support) 
+NAPALM is a Python library that implements a set of functions to interact with different network device Operating Systems using a unified API. Has gone native in Ansible & Salt with offical modules (see notes in doc & on GIThub site).
+* https://napalm.readthedocs.io/en/latest/index.html
+* https://github.com/napalm-automation/napalm
+* https://pynet.twb-tech.com/blog/automation/napalm-ios.html
 
-### YAML: YAML Ain't Markup Language
+#### YAML: YAML Ain't Markup Language
 YAML is a human friendly data serialization standard for all programming languages.
 * http://yaml.org/
 * http://docs.ansible.com/ansible/YAMLSyntax.html
 * http://www.yaml.org/spec/1.2/spec.html
+* http://pyyaml.org/ YAML implementations for Python 
 Check the validity of your YAML and errors + get a nice clean UTF-8 version of it.
 * http://www.yamllint.com
 
@@ -107,41 +114,26 @@ Check the validity of your YAML and errors + get a nice clean UTF-8 version of i
 (JavaScript Object Notation) is a lightweight data-interchange format. 
 * http://json.org/
 
-###     Postman
+### Postman
 Roll your own API... 
 https://www.getpostman.com
+
+### Zero to API in 4 Minutes
+Blog post covering build your own API uses flask & swagger (python stuff) 
+https://cidrblock.github.io/zero-to-api-in-4-minutes.html
 
 
 ## Open-source Configuration Management Software
 * https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
   
-Good podcasts on these topics on Packet Pushers: 
+Good podcasts on these topics on Packet Pushers (list not up to date): 
 * http://packetpushers.net/podcast/podcasts/show-176-intro-to-python-automation-for-network-engineers
 * http://packetpushers.net/podcast/podcasts/show-198-kirk-byers-network-automation-python-ansible
 * http://packetpushers.net/podcast/podcasts/show-270-design-build-9-automation-python-netmiko
 * http://packetpushers.net/podcast/podcasts/datanauts-034-automate-packets
 * http://packetpushers.net/podcast/podcasts/pq-show-99-netmiko-napalm-network-automation
 
-
-Chef & Puppet are the older tools 
-
-### CHEF
-Chef is a configuration management tool written in Ruby, and uses a pure Ruby DSL for writing configuration "recipes". These recipes contain resources that should be put into the declared state. Chef can be used as a client–server tool, or used in "solo" mode
-* https://www.chef.io/
-* https://learn.chef.io/
-* https://github.com/chef/chef
-    
-### PUPPET
-Puppet consists of a custom declarative language to describe system configuration, distributed using the client–server paradigm, and a library to realize the configuration. The resource abstraction layer enables administrators to describe the configuration in high-level terms, such as users, services and packages. Puppet will then ensure the server's state matches the description. 
-* https://puppet.com/
-* https://puppet.com/resources/ebook/tools-for-learning-puppet
-* https://github.com/puppetlabs
-
-LEARNING LAB: 
-* https://puppet.com/download-learning-vm  
-
-
-One engineers view of Salt & Ansible, useful for an overview of both:
+Chef & Puppet are the older tools that I've not seen much active stuff so I've removed them for now.  One engineers view of Salt & Ansible, useful for an overview of both:
 * http://jensrantil.github.io/salt-vs-ansible.html
 
 ### ANSIBLE
@@ -150,7 +142,6 @@ Combines multi-node deployment, ad-hoc task execution, and configuration managem
 * https://www.ansible.com/quick-start-video
 * https://www.ansible.com/network-automation
 * http://docs.ansible.com/ansible/index.html
-* https://github.com/ansible/ansible
 * https://networklore.com/ansible-getting-started/
 * http://jpmens.net/2012/06/06/configuration-management-with-ansible/
 * http://www.oreilly.com/webops-perf/free/network-automation-with-ansible.csp
@@ -163,6 +154,7 @@ LEARNING LAB:
 * https://www.turnkeylinux.org/ansible **Ansible on a VM**
 * https://github.com/turnkeylinux-apps/ansible/blob/master/docs/usage.rst
 
+
 ### SALT
 Salt started out as a tool for remote server management. As its usage has grown, it has gained a number of extended features, including a more comprehensive mechanism for host configuration. This is a relatively new feature facilitated through the Salt States component. With the traction that Salt has gotten in the last bit, the support for more features and platforms might continue to grow.
 * https://saltstack.com/community/ <-best starting point
@@ -172,21 +164,6 @@ LEARNING LAB:
 **uses Vagrant on Virtual Box to setup the lab ie automation in action**
 * https://docs.saltstack.com/en/getstarted/fundamentals/index.html 
 
-### StackStorm - Event-Driven Automation
-StackStorm is a powerful open-source automation platform that wires together all of your apps, services and workflows. 
-* https://stackstorm.com
-* https://docs.stackstorm.com/overview.html
-* https://keepingitclassless.net/2016/12/introduction-to-stackstorm
-* https://github.com/StackStorm/st2
-
-#### StackStorm Exchange
-Automate all the things you already know and use
-with dozens of ready-made integration packs.
-Cloud providers, monitoring services, lightbulbs.
-* https://exchange.stackstorm.org
-#### ST2Vagrant
-Deploy StackStorm event-driven automation platform locally with Vagrant  https://www.stackstorm.com
-* https://github.com/stackstorm/st2vagrant
 
 ##Mixed stuffs:
 
@@ -225,32 +202,18 @@ A highly extensible framework for distributed capacity and connectivity testing 
 * https://www.youtube.com/watch?v=ZIykHS5RoNM
 * http://packetpushers.net/podcast/podcasts/pq-show-81-network-testing-todd
 
-## Nelkit (Patrick Ogenstad)
-Networklore Toolkit (Nelkit) is a collection of free tools aimed to help network engineers.
-* https://networklore.com/nelkit
-* https://networklore.com/nk-compare-configs
-
 ## Front ends 
-(really more like 'getting severely sidetracked')    
+front your own API/montioring/config system?   
 *  https://www.airpair.com/python/posts/django-flask-pyramid
 
 ###     DJANGO
 Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. 
 * https://www.djangoproject.com/
 * https://docs.djangoproject.com/en/1.9/intro/tutorial01/
-* https://www.turnkeylinux.org/django
-
-###     Pyramid
-similar purpose to Django
-* https://trypyramid.com/
-* http://www.pylonsproject.org/
 
 ###     Flask
-similar purpose to Django but simpler
+similar purpose to Django but simpler and included in anaconda by default 
 * http://flask.pocoo.org/
 * https://pypi.python.org/pypi/Flask/0.11
 
-###     Waitress
-Waitress is meant to be a production-quality pure-Python WSGI server with very acceptable performance. It has no dependencies except ones which live in the Python standard library.
-* http://docs.pylonsproject.org/projects/waitress/en/latest
 
