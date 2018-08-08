@@ -20,7 +20,6 @@ A little UNIX knowledge helps...
 * [https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/](https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/)
 
 ## Network automation blogs:
-* [https://jedelman.com/](https://jedelman.com/) @jedelman8
 * [https://pynet.twb-tech.com/](https://pynet.twb-tech.com/) @kirkbyers [netmiko]
 * [https://networklore.com/](https://networklore.com/) Patrick Ogenstad
 * [http://keepingitclassless.net/](http://keepingitclassless.net/) @mierden  [ToDD]
@@ -37,7 +36,6 @@ A little UNIX knowledge helps...
 * [https://learninglabs.cisco.com/tracks/netprog-eng](https://learninglabs.cisco.com/tracks/netprog-eng)
 * [https://learninglabs.cisco.com/tracks/devnet-express-dna](https://learninglabs.cisco.com/tracks/devnet-express-dna)
 * [https://developer.cisco.com/site/networking/](https://developer.cisco.com/site/networking/) DNA starting point on DevNet
-* [https://communities.cisco.com/docs/DOC-71197](https://communities.cisco.com/docs/DOC-71197) Configure ASA ACL's with APIs
 
 ## Cisco Training & Certification for Network Programmability
 Has some (limited) free trial chapters.
