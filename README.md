@@ -1,17 +1,15 @@
 # Network Programmability & Automation
 ## Light the New World
 
-2018.56.08 12:56  
-
 This was put together as a form of tracking my path through the network automation jungle. The choice of tools to learn is mostly environment based and as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I am personally working through Python + netmiko & ciscoconfigparse for simple stuff and will be adding Ansible to the mix. I am using Cisco's VIRL as my test network. VIRL has an API too, it would be nice to able to completely automate the build and configuration of the VIRL test environment...
 
 Originally started as an URL dump and as a GIT practice project. Most comments are cribbed from the source site or
   ["Wikipedia - Comparison of open-source configuration management software"](https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software)
 
-#### August 2018 update
+##### 2018.58.09 14:58 update
 Trying to cull dead links, add hyperlinking and now adding Juniper to the mix.
 
-#### teaser ["Using Ansible Playbooks with Cisco VIRL"](http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL)
+##### teaser ["Using Ansible Playbooks with Cisco VIRL"](http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL)
 
 
 ## Linux Cheat Sheet:
