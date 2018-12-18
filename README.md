@@ -1,14 +1,15 @@
 # Network Programmability & Automation
 ### Light the New World
-2018/09/26 09:49 GMT+10:00 
+2018/12/19 09:37 GMT+11:00  
 
 This was put together as a form of tracking my path through the network automation jungle. The choice of tools to learn is mostly environment based and as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I am personally working through Python + netmiko & ciscoconfigparse for simple stuff and will be adding Ansible to the mix. I am using Cisco's VIRL as my test network. VIRL has an API too, it would be nice to able to completely automate the build and configuration of the VIRL test environment...
 
 Originally started as an URL dump and as a GIT practice project. Most comments are cribbed from the source site or
   https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
 
-#### September update
-Trying to cull dead links & new topics. + new GIT learning link
+#### December update
+added json command-line processor **jq** 
+added **NRE Labs** online training site
 
 ## teaser
 * [http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL](http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL)
@@ -26,11 +27,12 @@ A little UNIX knowledge helps...
 * [http://ipSpace.net/](http://ipSpace.net/)            @ioshints Ivan Pepelnjak [web seminars as well]
 * [http://packetpushers.net/](http://packetpushers.net/)      lots of blogs and podcasts...
 * [https://sreeninet.wordpress.com](https://sreeninet.wordpress.com)
-* https://codingnetworker.com    Henry Ölsner
+* [https://codingnetworker.com](https://codingnetworker.com)    Henry Ölsner
 
 ## Network automation training:
 * [http://networktocode.com/](http://networktocode.com/)	Jason Edelman's company for training + labs [also join his slack group here]
 * [http://ipSpace.net/](http://ipSpace.net/) Ivan Pepelnjak's company with many (live/recorded) web seminars in subscription or buy options
+* [https://labs.networkreliability.engineering/](https://labs.networkreliability.engineering/) described as "Learn automation by doing it. Right now, right here, in your browser."
 
 ## Cisco Network Programmability and DevOps
 * [https://learninglabs.cisco.com/tracks/netprog-eng](https://learninglabs.cisco.com/tracks/netprog-eng)
@@ -118,6 +120,7 @@ Check the validity of your YAML and errors + get a nice clean UTF-8 version of i
 ### JSON
 (JavaScript Object Notation) is a lightweight data-interchange format.
 * [http://json.org/](http://json.org/)
+* [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)  jq is like sed for JSON data 
 
 ### YANG - Data Modeling Language.
 * [https://developer.cisco.com/site/ydk/](https://developer.cisco.com/site/ydk/)
