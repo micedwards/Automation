@@ -1,18 +1,23 @@
 # Network Programmability & Automation
 ### Light the New World
-2018/12/19 09:37 GMT+11:00  
+2018/12/20 09:35 GMT+11:00  
 
 This was put together as a form of tracking my path through the network automation jungle. The choice of tools to learn is mostly environment based and as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I am personally working through Python + netmiko & ciscoconfigparse for simple stuff and will be adding Ansible to the mix. I am using Cisco's VIRL as my test network. VIRL has an API too, it would be nice to able to completely automate the build and configuration of the VIRL test environment...
 
 Originally started as an URL dump and as a GIT practice project. Most comments are cribbed from the source site or
   https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
 
-#### December update
+##### December update 2
+added Juniper eBook overview on starting implementing network automation
+##### December update 1
 added json command-line processor **jq** 
 added **NRE Labs** online training site
 
-## teaser
+#### teaser
 * [http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL](http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL)
+
+#### overview on moving to automation on network 
+* [https://junipernetworks.lookbookhq.com/c/sp-transformation-network-automation](https://junipernetworks.lookbookhq.com/c/sp-transformation-network-automation)
 
 
 ## Linux Cheat Sheet:
@@ -20,27 +25,27 @@ A little UNIX knowledge helps...
   [https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/](https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/)
 
 ## Network automation blogs:
-* [https://jedelman.com/](https://jedelman.com/)          @jedelman8
-* [https://pynet.twb-tech.com/](https://pynet.twb-tech.com/)    @kirkbyers [netmiko]
-* [https://networklore.com/](https://networklore.com/)       Patrick Ogenstad
-* [http://keepingitclassless.net/](http://keepingitclassless.net/) @mierden  [ToDD]
-* [http://ipSpace.net/](http://ipSpace.net/)            @ioshints Ivan Pepelnjak [web seminars as well]
-* [http://packetpushers.net/](http://packetpushers.net/)      lots of blogs and podcasts...
+* [https://jedelman.com/](https://jedelman.com/) @jedelman8
+* [https://pynet.twb-tech.com/](https://pynet.twb-tech.com/) @kirkbyers [netmiko]
+* [https://networklore.com/](https://networklore.com/) Patrick Ogenstad
+* [http://keepingitclassless.net/](http://keepingitclassless.net/) @mierden [ToDD]
+* [http://ipSpace.net/](http://ipSpace.net/) @ioshints Ivan Pepelnjak [web seminars as well]
+* [http://packetpushers.net/](http://packetpushers.net/) lots of blogs and podcasts...
 * [https://sreeninet.wordpress.com](https://sreeninet.wordpress.com)
-* [https://codingnetworker.com](https://codingnetworker.com)    Henry Ölsner
+* [https://codingnetworker.com](https://codingnetworker.com) Henry Ölsner
 
 ## Network automation training:
 * [http://networktocode.com/](http://networktocode.com/)	Jason Edelman's company for training + labs [also join his slack group here]
 * [http://ipSpace.net/](http://ipSpace.net/) Ivan Pepelnjak's company with many (live/recorded) web seminars in subscription or buy options
 * [https://labs.networkreliability.engineering/](https://labs.networkreliability.engineering/) described as "Learn automation by doing it. Right now, right here, in your browser."
 
-## Cisco Network Programmability and DevOps
+### Cisco Network Programmability and DevOps
 * [https://learninglabs.cisco.com/tracks/netprog-eng](https://learninglabs.cisco.com/tracks/netprog-eng)
 * [https://learninglabs.cisco.com/tracks/devnet-express-dna](https://learninglabs.cisco.com/tracks/devnet-express-dna)
 * [https://developer.cisco.com/site/networking/](https://developer.cisco.com/site/networking/) DNA starting point on DevNet
 * [https://communities.cisco.com/docs/DOC-71197](https://communities.cisco.com/docs/DOC-71197) Configure ASA ACL's with APIs
 
-## Cisco Training & Certification for Network Programmability
+### Cisco Training & Certification for Network Programmability
 * [https://learningnetwork.cisco.com/community/certifications/network-programmability/design-and-implementation](https://learningnetwork.cisco.com/community/certifications/network-programmability/design-and-implementation)
 * [https://learningnetworkstore.cisco.com/network-programmability-specialists](https://learningnetworkstore.cisco.com/network-programmability-specialists)
 * [https://learningnetworkstore.cisco.com/on-demand-e-learning/programming-for-network-engineers-prne-v1-0-elt-prne-v1-0-020276](https://learningnetworkstore.cisco.com/on-demand-e-learning/programming-for-network-engineers-prne-v1-0-elt-prne-v1-0-020276)
