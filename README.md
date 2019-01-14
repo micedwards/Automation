@@ -1,17 +1,14 @@
 # Network Programmability & Automation
 ### Light the New World
-2018/12/20 09:35 GMT+11:00  
+2019/01/15 09:48 GMT+11:00 
 
 This was put together as a form of tracking my path through the network automation jungle. The choice of tools to learn is mostly environment based and as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I am personally working through Python + netmiko & ciscoconfigparse for simple stuff and will be adding Ansible to the mix. I am using Cisco's VIRL as my test network. VIRL has an API too, it would be nice to able to completely automate the build and configuration of the VIRL test environment...
 
 Originally started as an URL dump and as a GIT practice project. Most comments are cribbed from the source site or
   https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
 
-##### December update 2
-added Juniper eBook overview on starting implementing network automation
-##### December update 1
-added json command-line processor **jq** 
-added **NRE Labs** online training site
+##### January update
+added DataCamp as a training option
 
 #### teaser
 * [http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL](http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL)
@@ -64,9 +61,13 @@ Git is a free and open source distributed version control system designed to han
 
 
 ## Python
-Search the O'Reilly website for the free eBooks "A Whirlwind Tour of Python" & "How to Make Mistakes in Python" (worth reading the first chapter or so of Mistakes before installing any version of Python)
+Starting to play with Python before commiting:
+* [https://www.datacamp.com/courses/intro-to-python-for-data-science](https://www.datacamp.com/courses/intro-to-python-for-data-science "https://www.datacamp.com/courses/intro-to-python-for-data-science")
+The intro to Python course is free. Video training plus programming exercises in the browser. More aimed at data scientists but the basics are still good. 
+
+Installing Python
 * [https://www.python.org](https://www.python.org)
-* [https://www.continuum.io/downloads](https://www.continuum.io/downloads) Anaconda: Python + development environment (I used this)
+* [https://www.continuum.io/downloads](https://www.continuum.io/downloads) Anaconda: Python + development environment (I used this before moving to linux)
 * [https://developers.google.com/edu/python](https://developers.google.com/edu/python) is the website of Google’s (free) Python course that I first watched
 * [https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/)
 * [https://training.talkpython.fm](https://training.talkpython.fm) also home to a good python podcast on the main site talkpython.fm
