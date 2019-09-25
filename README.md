@@ -1,21 +1,20 @@
 # Network Programmability & Automation
 ### Light the New World
-2019/01/15 09:48 GMT+11:00 
+2019/09/25 12:01 GMT+10:00 
 
 This was put together as a form of tracking my path through the network automation jungle. The choice of tools to learn is mostly environment based and as most of the customers I work for are Cisco based with a mix of firewalls/loadbalancers I am personally working through Python + netmiko & ciscoconfigparse for simple stuff and will be adding Ansible to the mix. I am using Cisco's VIRL as my test network. VIRL has an API too, it would be nice to able to completely automate the build and configuration of the VIRL test environment...
 
 Originally started as an URL dump and as a GIT practice project. Most comments are cribbed from the source site or
-  https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
+  [https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software](https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software)
 
-##### January update
-added DataCamp as a training option
+##### September update
+various tweaks
 
 #### teaser
-* [http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL](http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL)
+* [https://labs.networkreliability.engineering/](https://labs.networkreliability.engineering/) described as "Learn automation by doing it. Right now, right here, in your browser." No login required! Try it out before reading any more, see what automation can do! 
 
 #### overview on moving to automation on network 
 * [https://junipernetworks.lookbookhq.com/c/sp-transformation-network-automation](https://junipernetworks.lookbookhq.com/c/sp-transformation-network-automation)
-
 
 ## Linux Cheat Sheet:
 A little UNIX knowledge helps...
@@ -28,15 +27,16 @@ A little UNIX knowledge helps...
 * [http://keepingitclassless.net/](http://keepingitclassless.net/) @mierden [ToDD]
 * [http://ipSpace.net/](http://ipSpace.net/) @ioshints Ivan Pepelnjak [web seminars as well]
 * [http://packetpushers.net/](http://packetpushers.net/) lots of blogs and podcasts...
-* [https://sreeninet.wordpress.com](https://sreeninet.wordpress.com)
 * [https://codingnetworker.com](https://codingnetworker.com) Henry Ölsner
 
 ## Network automation training:
-* [http://networktocode.com/](http://networktocode.com/)	Jason Edelman's company for training + labs [also join his slack group here]
 * [http://ipSpace.net/](http://ipSpace.net/) Ivan Pepelnjak's company with many (live/recorded) web seminars in subscription or buy options
 * [https://labs.networkreliability.engineering/](https://labs.networkreliability.engineering/) described as "Learn automation by doing it. Right now, right here, in your browser."
+* [http://networktocode.com/](http://networktocode.com/)	Jason Edelman's company for training + labs [also join his slack group here]
 
 ### Cisco Network Programmability and DevOps
+Cisco has jumped into automation in a big way. Some of these links are possibly dead but just look around on [learninglabs.cisco.com](learninglabs.cisco.com) and [developer.cisco.com](developer.cisco.com).
+
 * [https://learninglabs.cisco.com/tracks/netprog-eng](https://learninglabs.cisco.com/tracks/netprog-eng)
 * [https://learninglabs.cisco.com/tracks/devnet-express-dna](https://learninglabs.cisco.com/tracks/devnet-express-dna)
 * [https://developer.cisco.com/site/networking/](https://developer.cisco.com/site/networking/) DNA starting point on DevNet
@@ -47,6 +47,8 @@ A little UNIX knowledge helps...
 * [https://learningnetworkstore.cisco.com/network-programmability-specialists](https://learningnetworkstore.cisco.com/network-programmability-specialists)
 * [https://learningnetworkstore.cisco.com/on-demand-e-learning/programming-for-network-engineers-prne-v1-0-elt-prne-v1-0-020276](https://learningnetworkstore.cisco.com/on-demand-e-learning/programming-for-network-engineers-prne-v1-0-elt-prne-v1-0-020276)
 * [https://www.ciscolearningsystem.com](https://www.ciscolearningsystem.com) Course site for above has sandbox for labs
+
+* [http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL](http://automation.ipspace.net/Example:Using_Ansible_Playbooks_with_Cisco_VIRL)
 
 
 ## GIT
@@ -62,10 +64,12 @@ Git is a free and open source distributed version control system designed to han
 
 ## Python
 Starting to play with Python before commiting:
+
 * [https://www.datacamp.com/courses/intro-to-python-for-data-science](https://www.datacamp.com/courses/intro-to-python-for-data-science "https://www.datacamp.com/courses/intro-to-python-for-data-science")
 The intro to Python course is free. Video training plus programming exercises in the browser. More aimed at data scientists but the basics are still good. 
 
 Installing Python
+
 * [https://www.python.org](https://www.python.org)
 * [https://www.continuum.io/downloads](https://www.continuum.io/downloads) Anaconda: Python + development environment (I used this before moving to linux)
 * [https://developers.google.com/edu/python](https://developers.google.com/edu/python) is the website of Google’s (free) Python course that I first watched
@@ -81,23 +85,27 @@ Installing Python
 
 #### Netmiko
 An open-source Python library that simplifies SSH management to network devices. The library is based on the Paramiko SSH library.
+
 * [https://pynet.twb-tech.com/](https://pynet.twb-tech.com/)
 * [Packet Pushers #270 Automation with Python & Netmiko](http://packetpushers.net/podcast/podcasts/show-270-design-build-9-automation-python-netmiko/) and lots since that...
 
 #### ciscoconfparse
 ciscoconfparse is a Python library, which parses through Cisco IOS-style configurations
+
 * [http://www.pennington.net/py/ciscoconfparse](http://www.pennington.net/py/ciscoconfparse)
 * [https://codingnetworker.com/2016/06/parse-cisco-ios-configuration-ciscoconfparse](https://codingnetworker.com/2016/06/parse-cisco-ios-configuration-ciscoconfparse)
   I used this to dismantle ACE20 loadbalancer configurations into individual farms (with a little manual checking afterwards)
 
 #### TextFSM
 TextFSM is a Python module that implements a template based state machine for parsing semi-formatted text.
+
 * [https://github.com/google/textfsm](https://github.com/google/textfsm)
 * [http://www.oznetnerd.com/category/automation/textfsm](http://www.oznetnerd.com/category/automation/textfsm)
 * [https://codingnetworker.com/2015/08/parse-cli-outputs-textfsm](https://codingnetworker.com/2015/08/parse-cli-outputs-textfsm)
 
 #### pip installs: netaddr & ipaddress
 IP address & network manipulation
+
 * [https://pythonhosted.org/netaddr/installation.html](https://pythonhosted.org/netaddr/installation.html)
 * [https://pythonhosted.org/netaddr/tutorial_01.html](https://pythonhosted.org/netaddr/tutorial_01.html)
 * [https://docs.python.org/3/howto/ipaddress.html](https://docs.python.org/3/howto/ipaddress.html)
@@ -105,26 +113,31 @@ IP address & network manipulation
 
 #### JINJA2
 Jinja2 is a full featured template engine for Python.
+
 * [http://jinja.pocoo.org](http://jinja.pocoo.org) 
 
 #### NAPALM (Network Automation and Programmability Abstraction Layer with Multivendor support)
 NAPALM is a Python library that implements a set of functions to interact with different network device Operating Systems using a unified API. Has gone native in Ansible & Salt with offical modules (see notes in doc & on GIThub site).
+
 * [https://napalm.readthedocs.io/en/latest/index.html](https://napalm.readthedocs.io/en/latest/index.html)
 * [https://github.com/napalm-automation/napalm](https://github.com/napalm-automation/napalm)
 * [https://pynet.twb-tech.com/blog/automation/napalm-ios.html](https://pynet.twb-tech.com/blog/automation/napalm-ios.html)
 
 #### YAML: YAML Ain't Markup Language 
 YAML is a human friendly data serialization standard for all programming languages.
+
 * [http://yaml.org/](http://yaml.org/)
 * [http://docs.ansible.com/ansible/YAMLSyntax.html](http://docs.ansible.com/ansible/YAMLSyntax.html)
 * [http://www.yaml.org/spec/1.2/spec.html](http://www.yaml.org/spec/1.2/spec.html)
 * [http://pyyaml.org/](http://pyyaml.org/) YAML implementations for Python
 
 Check the validity of your YAML and errors + get a nice clean UTF-8 version of it.
+
 * [http://www.yamllint.com](http://www.yamllint.com)
 
 ### JSON
 (JavaScript Object Notation) is a lightweight data-interchange format.
+
 * [http://json.org/](http://json.org/)
 * [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)  jq is like sed for JSON data 
 
@@ -147,6 +160,7 @@ Blog post covering build your own API uses flask & swagger (python stuff)
 * [https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software](https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software)
 
 Good podcasts on these topics on Packet Pushers (list not up to date):
+
 * [http://packetpushers.net/podcast/podcasts/show-176-intro-to-python-automation-for-network-engineers](http://packetpushers.net/podcast/podcasts/show-176-intro-to-python-automation-for-network-engineers)
 * [http://packetpushers.net/podcast/podcasts/show-198-kirk-byers-network-automation-python-ansible](http://packetpushers.net/podcast/podcasts/show-198-kirk-byers-network-automation-python-ansible)
 * [http://packetpushers.net/podcast/podcasts/show-270-design-build-9-automation-python-netmiko](http://packetpushers.net/podcast/podcasts/show-270-design-build-9-automation-python-netmiko)
@@ -154,6 +168,7 @@ Good podcasts on these topics on Packet Pushers (list not up to date):
 * [http://packetpushers.net/podcast/podcasts/pq-show-99-netmiko-napalm-network-automation](http://packetpushers.net/podcast/podcasts/pq-show-99-netmiko-napalm-network-automation)
 
 One engineers view of Salt & Ansible, useful for an overview of both:
+
 * [http://jensrantil.github.io/salt-vs-ansible.html](http://jensrantil.github.io/salt-vs-ansible.html)
 
 ### ANSIBLE
@@ -169,24 +184,20 @@ Combines multi-node deployment, ad-hoc task execution, and configuration managem
 * [http://docs.ansible.com/ansible/ios_config_module.html](http://docs.ansible.com/ansible/ios_config_module.html)
 * [https://cidrblock.github.io/ansible-playbook-from-the-ground-up.html](https://cidrblock.github.io/ansible-playbook-from-the-ground-up.html)
 
-LEARNING LAB:
-* [https://www.turnkeylinux.org/ansible](https://www.turnkeylinux.org/ansible) **Ansible on a VM**
-* [https://github.com/turnkeylinux-apps/ansible/blob/master/docs/usage.rst](https://github.com/turnkeylinux-apps/ansible/blob/master/docs/usage.rst)
 
 ### SALT
 Salt started out as a tool for remote server management. As its usage has grown, it has gained a number of extended features, including a more comprehensive mechanism for host configuration. This is a relatively new feature facilitated through the Salt States component. With the traction that Salt has gotten in the last bit, the support for more features and platforms might continue to grow.
+
 * [https://saltstack.com/community/](https://saltstack.com/community/) <-best starting point
 * [https://blog.talpor.com/2014/07/saltstack-beginners-tutorial/](https://blog.talpor.com/2014/07/saltstack-beginners-tutorial/)
 
 LEARNING LAB:
+
 **uses Vagrant on Virtual Box to setup the lab ie automation in action**
+
 * [https://docs.saltstack.com/en/getstarted/fundamentals/index.html](https://docs.saltstack.com/en/getstarted/fundamentals/index.html)
 
 ##Mixed stuffs:
-
-### RBFS (REST based file-server)
-RBFS provides a RESTful, JSON based, interface to a file system.
-* [https://github.com/cidrblock/RBFS](https://github.com/cidrblock/RBFS)
 
 ### VAGRANT
 Vagrant is computer software that creates and configures virtual development environments. It can be seen as a higher-level wrapper around virtualization software such as VirtualBox, VMware, KVM and Linux Containers (LXC), and around configuration management software such as Ansible, Chef, Salt, and Puppet.
@@ -208,34 +219,3 @@ Sadly won't work with VMware Player...
 * [https://rednectar.net/2011/07/20/vmware-interfaces-tutorial/](https://rednectar.net/2011/07/20/vmware-interfaces-tutorial/)
 * [http://www.virtualizationadmin.com/articles-tutorials/vmware-server-workstation-player-articles/understanding-virtual-networking-vmware-workstation-9.html](http://www.virtualizationadmin.com/articles-tutorials/vmware-server-workstation-player-articles/understanding-virtual-networking-vmware-workstation-9.html)
 
-### Turnkey Linux
-VMs/ISOs/containers for various purposes:
-* [https://www.turnkeylinux.org/](https://www.turnkeylinux.org/)
-* [https://www.turnkeylinux.org/core](https://www.turnkeylinux.org/core)
-* [https://www.turnkeylinux.org/ansible](https://www.turnkeylinux.org/ansible)
-
-## ToDD
-A highly extensible framework for distributed capacity and connectivity testing (Testing on Demand....Distributed!)
-
-* [https://github.com/toddproject/todd](https://github.com/toddproject/todd)
-* [https://www.youtube.com/watch?v=ZIykHS5RoNM](https://www.youtube.com/watch?v=ZIykHS5RoNM)
-* [http://packetpushers.net/podcast/podcasts/pq-show-81-network-testing-todd](http://packetpushers.net/podcast/podcasts/pq-show-81-network-testing-todd)
-
-## Front ends
-front your own API/montioring/config system?
-
-*  [https://www.airpair.com/python/posts/django-flask-pyramid](https://www.airpair.com/python/posts/django-flask-pyramid)
-
-###     DJANGO
-Django is a high-level Python Web framework
-
-* [https://www.djangoproject.com/](https://www.djangoproject.com/)
-* [https://docs.djangoproject.com/en/1.9/intro/tutorial01/](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)
-
-###     Flask
-similar purpose to Django but simpler and included in anaconda by default
-
-* [http://flask.pocoo.org/](http://flask.pocoo.org/)
-
-
-[Edited using [MarkdownPad 2](http://markdownpad.com/)]
